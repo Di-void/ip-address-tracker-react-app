@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* 
+============= 
+FONTS
+=============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+/* 
+==============
+VARIABLES
+==============
+*/
+
+:root {
+	--clr-primary-1: hsl(0, 0%, 17%);
+	--clr-primary-2: hsl(0, 0%, 59%);
+	--clr-primary-3: #fff;
+	--ff-primary: "Rubik";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*
+==============
+GLOBAL STYLES
+==============
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--ff-primary);
+}
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.25rem;
+}
+h4 {
+	font-size: 0.875rem;
+}
+h1,
+h2,
+h3,
+h4 {
+	text-transform: capitalize;
+}
+@media screen and (min-width: 800px) {
+	h1 {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
+	h3 {
+		font-size: 1.75rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
+	body {
+		font-size: 1rem;
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+		line-height: 1;
+	}
+}
+/* global classes */
+.section {
+	padding: 2rem 0;
+}
+
+.section-center {
+	width: 90vw;
+	margin: 0 auto;
+	max-width: 1170px;
 }
