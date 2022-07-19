@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Map from "./Map";
+import Location from "./Location";
 import backgroundImage from "../images/pattern-bg.png";
 
 // # MAIN COMP..
@@ -12,7 +12,7 @@ const Background = () => {
 		<Wrapper>
 			<section>
 				<img src={backgroundImage} alt="background" className="hero-img" />
-				<Map />
+				<Location />
 			</section>
 		</Wrapper>
 	);

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaAngleRight } from "react-icons/fa";
 import { useRef } from "react";
+import { useGlobalContext } from "../context";
 
 // # MAIN COMP..
 const SearchForm = () => {
@@ -10,6 +11,7 @@ const SearchForm = () => {
 	// # FUNCTIONS AND SIDE EFFECTS
 	const handleSubmit = e => {
 		e.preventDefault();
+		console.log(inputContainer.current.value);
 	};
 	// # RETs
 	return (
@@ -21,7 +23,7 @@ const SearchForm = () => {
 						ref={inputContainer}
 						placeholder="Search for any IP address"
 					/>
-					<button type="submit" className="search-btn">
+					<button type="submit" className="search-btn" title="search IP">
 						<FaAngleRight className="icon" />
 					</button>
 				</form>

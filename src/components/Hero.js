@@ -2,10 +2,12 @@ import React from "react";
 import SearchForm from "./SearchForm";
 import styled from "styled-components";
 import { useRef } from "react";
+import { useGlobalContext } from "../context";
 
 // # MAIN COMP..
 const Hero = () => {
 	// # STATE VALUES
+	const { ip, isp, location, timezone } = useGlobalContext();
 	// # FUNCTIONS AND SIDE EFFECTS
 	// # RETs
 	return (
@@ -17,22 +19,22 @@ const Hero = () => {
 					{/* &nbsp; */}
 					<div className="sub">
 						<h4 className="sub-title">IP ADDRESS</h4>
-						<h2>Some Value</h2>
+						<h2>{ip}</h2>
 					</div>
 					<div className="demac"></div>
 					<div className="sub">
 						<h4 className="sub-title">location</h4>
-						<h2>Some Value</h2>
+						<h2>{location}</h2>
 					</div>
 					<div className="demac"></div>
 					<div className="sub">
 						<h4 className="sub-title">timezone</h4>
-						<h2>Some Value</h2>
+						<h2>{timezone}</h2>
 					</div>
 					<div className="demac"></div>
 					<div className="sub">
 						<h4 className="sub-title">isp</h4>
-						<h2>Some Value</h2>
+						<h2>{isp}</h2>
 					</div>
 				</article>
 			</div>
@@ -59,7 +61,7 @@ const Wrapper = styled.section`
 		}
 		article {
 			margin-top: 20px;
-			border: 1px solid black;
+			/* border: 1px solid black; */
 			border-radius: 1rem;
 			display: flex;
 			flex-direction: column;
@@ -67,13 +69,14 @@ const Wrapper = styled.section`
 			background-color: white;
 			height: fit-content;
 			width: 70%;
+			box-shadow: 0px 7px 18px 17px rgba(0, 0, 0, 0.1);
 
 			h2 {
 				text-align: center;
 				letter-spacing: 1px;
 				text-transform: capitalize;
 				color: var(--clr-primary-1);
-				font-size: 2rem;
+				font-size: 1.5rem;
 			}
 			h4 {
 				text-align: center;
@@ -121,4 +124,5 @@ const Wrapper = styled.section`
 		}
 	}
 `;
+
 export default Hero;

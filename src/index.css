@@ -39,16 +39,16 @@ a {
 	text-decoration: none;
 }
 h1 {
-	font-size: 3rem;
+	font-size: 2rem;
 }
 h2 {
-	font-size: 2rem;
+	font-size: 1rem;
 }
 h3 {
 	font-size: 1.25rem;
 }
 h4 {
-	font-size: 0.875rem;
+	font-size: 0.7rem;
 }
 h1,
 h2,
@@ -95,8 +95,37 @@ h4 {
 	color: var(--clr-primary-3);
 }
 .hero-img {
+	margin-bottom: -3px;
 	height: 30vh;
 	width: 100%;
 }
 
-/* DISPLAY SUB MENU */
+/* MAP */
+.leaflet-container {
+	/* width: 90vw; */
+	margin-top: 0;
+	z-index: 0;
+	height: 69.5vh;
+}
+
+/* 
+=============
+SPINNER
+============
+*/
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.loading {
+	width: 6rem;
+	height: 6rem;
+	margin: 0 auto;
+	margin-top: 10rem;
+	border-radius: 50%;
+	border: 3px solid #ccc;
+	border-top-color: var(--clr-primary-5);
+	animation: spinner 0.6s linear infinite;
+}
