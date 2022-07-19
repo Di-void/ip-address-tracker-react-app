@@ -1,5 +1,5 @@
 import React from "react";
-import { Background, Hero, SearchForm } from "./components";
+import { Background, Hero } from "./components";
 
 // # MAIN COMP..
 const App = () => {
@@ -8,9 +8,7 @@ const App = () => {
 	// # RETs
 	return (
 		<main>
-			<h1>This app works</h1>
 			<Background />
-			<SearchForm />
 			<Hero />
 		</main>
 	);

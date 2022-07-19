@@ -85,7 +85,18 @@ h4 {
 }
 
 .section-center {
-	width: 90vw;
+	width: 95vw;
+	/* border: 1px solid black; */
 	margin: 0 auto;
-	max-width: 1170px;
+	/* max-width: 1170px; */
 }
+.section-title {
+	text-align: center;
+	color: var(--clr-primary-3);
+}
+.hero-img {
+	height: 30vh;
+	width: 100%;
+}
+
+/* DISPLAY SUB MENU */
