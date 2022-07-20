@@ -1,22 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import { FaAngleRight } from "react-icons/fa";
-import { useRef } from "react";
 import { useGlobalContext } from "../context";
 
 // # MAIN COMP..
 const SearchForm = () => {
 	// # STATE VALUES
-	const inputContainer = useRef(null);
+	const { error, inputContainer, fetchIpData, rootUrl } = useGlobalContext();
+	console.log(error);
 	// # FUNCTIONS AND SIDE EFFECTS
 	const handleSubmit = e => {
 		e.preventDefault();
 		console.log(inputContainer.current.value);
+		const input = inputContainer.current.value;
+		fetchIpData(`${rootUrl}&ipAddress=${input}`);
 	};
 	// # RETs
 	return (
 		<Wrapper>
 			<div className="section-center">
+				{error.show && <h3 className="error-text">{error.msg}</h3>}
 				<form onSubmit={handleSubmit}>
 					<input
 						type="text"
@@ -37,6 +40,11 @@ const Wrapper = styled.section`
 	/* background: var(--clr-primary-3); */
 
 	.section-center {
+		.error-text {
+			color: red;
+			font-weight: 700;
+			margin-bottom: 4px;
+		}
 		form {
 			display: flex;
 			width: 320px;

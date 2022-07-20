@@ -1,13 +1,16 @@
 import React from "react";
 import SearchForm from "./SearchForm";
 import styled from "styled-components";
-import { useRef } from "react";
 import { useGlobalContext } from "../context";
 
 // # MAIN COMP..
 const Hero = () => {
 	// # STATE VALUES
-	const { ip, isp, location, timezone } = useGlobalContext();
+	const {
+		ip,
+		isp,
+		location: { country, region, timezone },
+	} = useGlobalContext();
 	// # FUNCTIONS AND SIDE EFFECTS
 	// # RETs
 	return (
@@ -24,7 +27,7 @@ const Hero = () => {
 					<div className="demac"></div>
 					<div className="sub">
 						<h4 className="sub-title">location</h4>
-						<h2>{location}</h2>
+						<h2>{`${country}, ${region}`}</h2>
 					</div>
 					<div className="demac"></div>
 					<div className="sub">
