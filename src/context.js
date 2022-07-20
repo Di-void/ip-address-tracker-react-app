@@ -41,7 +41,7 @@ const AppProvider = ({ children }) => {
 			setError({
 				...error,
 				show: true,
-				msg: "There was an error fetching the data",
+				msg: "An error occured, Try checking input",
 			});
 			// console.log("something went wrong");
 		}

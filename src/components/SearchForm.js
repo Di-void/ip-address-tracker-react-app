@@ -13,7 +13,7 @@ const SearchForm = () => {
 		e.preventDefault();
 		console.log(inputContainer.current.value);
 		const input = inputContainer.current.value;
-		fetchIpData(`${rootUrl}&ipAddress=${input}`);
+		fetchIpData(`${rootUrl}&domain=${input}`);
 	};
 	// # RETs
 	return (
