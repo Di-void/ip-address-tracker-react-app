@@ -28,7 +28,7 @@ const AppProvider = ({ children }) => {
 		const response = await axios(url).catch(err => console.log(err));
 		if (response) {
 			const data = response.data;
-			console.log(data);
+			// console.log(data);
 			setMapData(data);
 			const {
 				location: { lat, lng },

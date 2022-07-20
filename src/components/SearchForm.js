@@ -7,11 +7,11 @@ import { useGlobalContext } from "../context";
 const SearchForm = () => {
 	// # STATE VALUES
 	const { error, inputContainer, fetchIpData, rootUrl } = useGlobalContext();
-	console.log(error);
+	// console.log(error);
 	// # FUNCTIONS AND SIDE EFFECTS
 	const handleSubmit = e => {
 		e.preventDefault();
-		console.log(inputContainer.current.value);
+		// console.log(inputContainer.current.value);
 		const input = inputContainer.current.value;
 		fetchIpData(`${rootUrl}&domain=${input}`);
 	};
@@ -24,7 +24,7 @@ const SearchForm = () => {
 					<input
 						type="text"
 						ref={inputContainer}
-						placeholder="Search for any IP address"
+						placeholder="Search for any IP address or domain"
 					/>
 					<button type="submit" className="search-btn" title="search IP">
 						<FaAngleRight className="icon" />
