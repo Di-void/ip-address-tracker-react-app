@@ -4,18 +4,15 @@ This is my solution to the [IP address tracker challenge on Frontend Mentor](htt
 
 ## Table Of Contents
 
--[Overview](#overview)
-
-- [Frontend Mentor - IP Tracker Solution](#frontend-mentor---ip-tracker-solution)
-  - [Table Of Contents](#table-of-contents)
-    - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
-  - [My Process](#my-process)
-    - [Built With](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Useful Resources](#useful-resources)
-  - [Author](#author)
+-  [Overview](#overview)
+   -  [The challenge](#the-challenge)
+   -  [Screenshot](#screenshot)
+   -  [Links](#links)
+-  [My Process](#my-process)
+   -  [Built With](#built-with)
+   -  [What I learned](#what-i-learned)
+   -  [Useful Resources](#useful-resources)
+-  [Author](#author)
 
 ### The challenge
 
@@ -73,8 +70,9 @@ const Wrapper = styled.section`
 
 -  [leaflet](https://leafletjs.com/examples/quick-start/) - This helped me with learning and easily getting started with the leafletjs Library.
 -  [react-leaflet examples](https://react-leaflet.js.org/docs/example-popup-marker/) - This helped a lot with writing the code for the map.
+-  [react-leaflet video tutorial](https://www.youtube.com/watch?v=290VgjkLong)
 
 ## Author
 
--  Frontend Mentor - [@Multimarix](https://www.frontendmentor.io/profile/Multimarix)]
+-  Frontend Mentor - [@Multimarix](https://www.frontendmentor.io/profile/Multimarix)
 -  Github - [DEE](https://github.com/Multimarix)
