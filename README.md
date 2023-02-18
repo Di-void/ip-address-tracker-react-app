@@ -75,4 +75,4 @@ const Wrapper = styled.section`
 ## Author
 
 -  Frontend Mentor - [@Multimarix](https://www.frontendmentor.io/profile/Multimarix)
--  Github - [DEE](https://github.com/Multimarix)
+-  Github - [DEE](https://github.com/Di-void)
